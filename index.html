@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI情绪日记</title>
+    <!-- 引入样式文件 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 每日情绪记录与分析</h1>
+        
+        <!-- 情绪记录输入区 -->
+        <div class="input-area">
+            <label>今日心情标签（比如：开心/焦虑/低落/平静）：</label>
+            <input type="text" id="mood-tag" placeholder="输入情绪标签">
+            
+            <label>今日事件描述（说说发生了什么）：</label>
+            <textarea id="mood-desc" placeholder="详细描述今天的经历和感受..."></textarea>
+            
+            <button id="submit-btn">提交 + 生成AI分析</button>
+        </div>
+        
+        <!-- AI分析结果区 -->
+        <div class="ai-result" id="ai-result">
+            <h3>🤖 AI情绪分析</h3>
+            <p id="analysis-content">提交记录后，这里会显示AI分析和建议～</p>
+        </div>
+        
+        <!-- 历史记录区 -->
+        <div class="history-area">
+            <h3>📜 情绪历史</h3>
+            <div id="history-list"></div>
+        </div>
+    </div>
+
+    <!-- 引入逻辑文件 -->
+    <script src="script.js"></script>
+</body>
+</html>
